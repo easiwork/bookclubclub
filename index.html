@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book Club Club</title>
+    <meta name="description" content="Book Club Club is a read-together club for all the books in your other book clubs." />
+    <meta property="og:title" content="Book Club Club" />
+    <meta property="og:description" content="Bring your own book. Read together every Tuesday at 5:30 at Georgie’s Cafe, LES." />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-labelledby="site-title">
+        <p class="eyebrow">bring your own unfinished book</p>
+        <h1 id="site-title">Book Club Club</h1>
+        <p class="dek">A read-together club for all the books in your other book clubs.</p>
+        <div class="details" aria-label="Meeting details">
+          <div><strong>When</strong><span>Tuesdays, 5:30–6:30pm</span></div>
+          <div><strong>Where</strong><span>Georgie’s Cafe, LES</span></div>
+          <div><strong>Bring</strong><span>Your own book, guilt optional</span></div>
+        </div>
+        <a class="button" href="#subscribe">Get updates</a>
+      </section>
+
+      <section class="card" id="about">
+        <h2>How it works</h2>
+        <p>Show up once a week, open the book you swore you’d finish, and read alongside other people doing the exact same thing. No assigned book. No homework speeches. No shame spiral.</p>
+        <p>Eventually, this site will get a proper blog. For now, it’s the place to find updates, posters, and the signup list.</p>
+      </section>
+
+      <section class="card split" id="subscribe">
+        <div>
+          <p class="eyebrow">updates list</p>
+          <h2>Want the next invite?</h2>
+          <p>Join the Buttondown list and we’ll email you about the next Book Club Club gathering.</p>
+        </div>
+        <form class="signup" id="signup-form" action="https://buttondown.com/api/emails/embed-subscribe/bookclubclub" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/bookclubclub', 'popupwindow')">
+          <label>
+            Name <span>(optional)</span>
+            <input name="metadata__name" autocomplete="name" placeholder="Ada" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required placeholder="you@example.com" />
+          </label>
+          <label>
+            Phone <span>(optional)</span>
+            <input name="metadata__phone" autocomplete="tel" placeholder="+1 555 123 4567" />
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" name="consent" required />
+            <span>Yes, send me Book Club Club updates.</span>
+          </label>
+          <input type="hidden" name="tag" value="website" />
+          <input type="hidden" name="embed" value="1" />
+          <button class="button" type="submit">Join the list</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite">Powered by Buttondown.</p>
+        </form>
+      </section>
+
+      <section class="card" id="posters">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">posters</p>
+            <h2>Prints, flyers, evidence</h2>
+          </div>
+          <p>Three first-run poster options. Small note: the blue/pink one says 7pm; the site currently lists 5:30pm.</p>
+        </div>
+        <div class="poster-grid" id="poster-grid">
+          <article class="poster-placeholder">
+            <span>Posters loading</span>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>book.clubclub.ing · Built for readers who are trying their best.</p>
+    </footer>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
